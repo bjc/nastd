@@ -1,0 +1,7 @@
+# $Id: freebsd,v 1.1.1.1 2000/02/16 23:32:48 shmit Exp $
+
+CC=		gcc -pthread
+INSTALL=	install
+
+OSFLAGS=	-DOS_FREEBSD -DFREEBSD_3
+OSLIBS=		-lcrypt -lutil

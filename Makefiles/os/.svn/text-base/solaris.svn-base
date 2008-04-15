@@ -1,0 +1,8 @@
+# $Id: solaris,v 1.2 2000/03/21 19:22:51 shmit Exp $
+
+CC=		gcc
+INSTALL=	/usr/ucb/install
+RPATH=		-R
+
+OSFLAGS=	-DOS_SOLARIS -D_POSIX_PTHREAD_SEMANTICS
+OSLIBS=		-lpthread -lnsl -lsocket -lposix4 -ldl

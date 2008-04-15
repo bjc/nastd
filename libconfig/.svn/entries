@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-12-08T17:32:07.572093Z"
+   url="svn+ssh://coleridge/svn/nastd/trunk/libconfig"
+   last-author="bjc"
+   kind="dir"
+   uuid="2641c99b-6c07-0410-920d-927397d2d5d0"
+   revision="8"/>
+<entry
+   committed-rev="1"
+   name="NumData.h"
+   text-time="2005-12-24T00:01:00.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="f0bc8bcac885c33fae6b388cbdb2993b"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:57.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Parser.h"
+   text-time="2005-12-24T00:01:00.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="7b1df589d7cf17b360f454ea5a8b8a75"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:57.000000Z"/>
+<entry
+   committed-rev="1"
+   name="NumData.m"
+   text-time="2005-12-24T00:01:00.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="d7d513d55f5b2f49a1c2a7c3f25c607d"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:57.000000Z"/>
+<entry
+   committed-rev="1"
+   name="StringData.h"
+   text-time="2005-12-24T00:01:00.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="b71ed77078d9ecdb0e1d35916ecd34c2"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:57.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Parser.m"
+   text-time="2005-12-24T00:01:00.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="a53cf0bea060a85d392626f2c94743ec"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:57.000000Z"/>
+<entry
+   committed-rev="1"
+   name=".pure"
+   text-time="2005-12-24T00:01:01.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:58.000000Z"/>
+<entry
+   committed-rev="1"
+   name="StringData.m"
+   text-time="2005-12-24T00:01:01.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="11882741e1ffc0eaffcac8be00f66260"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:58.000000Z"/>
+<entry
+   committed-rev="1"
+   name="String.h"
+   text-time="2005-12-24T00:01:01.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="5b4aacb4740fc4011707463414825c1e"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:58.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ArrayData.h"
+   text-time="2005-12-24T00:01:01.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="36413ddac4334f96f517dbb4c345233e"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:58.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Data.h"
+   text-time="2005-12-24T00:01:01.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="03560d07811808854cd76458597260e1"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:58.000000Z"/>
+<entry
+   committed-rev="1"
+   name="config.m"
+   text-time="2005-12-24T00:01:02.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="96c499111fc8af7aa5d577175c0e686d"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="BuffIO.h"
+   text-time="2005-12-24T00:01:01.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="e965c2fafb52c388d7aca469112f1e77"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:58.000000Z"/>
+<entry
+   committed-rev="1"
+   name="String.m"
+   text-time="2005-12-24T00:01:02.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="c1e8fe9a7cb472bb543a4ff3c08e7357"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ArrayData.m"
+   text-time="2005-12-24T00:01:02.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="6e30e0b55fa6a60befe3d7b3b11613d0"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="DictData.h"
+   text-time="2005-12-24T00:01:02.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="8fea54e50780f21f4cb95ee16a402f05"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Data.m"
+   text-time="2005-12-24T00:01:02.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="d1d9d9dd062f32cdf17168e1b1be86d6"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="BuffIO.m"
+   text-time="2005-12-24T00:01:02.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="e6751ba80a47e13ed8ec55e568d6d9f3"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="DictData.m"
+   text-time="2005-12-24T00:01:02.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="3db081896c8282d290e88914619cdff1"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="COPYRIGHT"
+   text-time="2005-12-24T00:01:02.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="f8d5134885de20571cd0b6ca9a3313d8"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:00.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Makefile"
+   text-time="2005-12-24T00:01:03.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="484e04bcaacde2d0cf55dc18f8a9a799"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:00.000000Z"/>
+<entry
+   committed-rev="1"
+   name=".cvsignore"
+   text-time="2005-12-24T00:01:03.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="11c2ac373f2d4ba2c5a696bd87529357"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:00.000000Z"/>
+</wc-entries>

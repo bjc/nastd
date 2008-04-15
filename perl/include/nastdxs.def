@@ -1,0 +1,10 @@
+#ifndef NASTDXS_DEF
+#define NASTDXS_DEF
+
+struct _nasth {
+	nasth *s;
+};
+
+typedef struct _nasth *	NASTD__Hole;
+
+#endif

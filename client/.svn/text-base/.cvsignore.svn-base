@@ -1,0 +1,7 @@
+.pure
+*.o
+*.so
+*.a
+*.core
+*.gmon
+tags

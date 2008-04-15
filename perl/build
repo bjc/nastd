@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+# $Id: build,v 1.2 2000/05/16 19:27:05 shmit Exp $
+
+if [ $# -lt 2 ]; then
+	echo "Usage: $0 makecmd perlflag args" 2>&1
+	exit 1
+fi
+
+# Grab the make command
+make=$1 && shift 1
+
+# Should perl support be built?
+perlflag=$1 && shift 1
+
+if [ x"$perlflag" != x"YES" ]; then
+	echo "Perl support not enabled. Edit Makefiles/config to enable it."
+	exit 0
+fi
+
+if [ \! -f Makefile ]; then
+	#
+	# Build the Makefile
+	#
+	/usr/bin/env perl Makefile.PL
+fi
+
+$make MAKE=$make $*

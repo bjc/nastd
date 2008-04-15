@@ -1,0 +1,8 @@
+# $Id: linux,v 1.3 2000/03/21 19:25:17 shmit Exp $
+
+CC=		gcc
+INSTALL=	install
+RPATH=		-L
+
+OSFLAGS=	-DOS_LINUX
+OSLIBS=		-lpthread

@@ -1,0 +1,23 @@
+const char *	T_PV
+nasth *		T_PTROBJ
+NASTD::Hole	O_NASTH
+
+#
+# Output methods
+#
+OUTPUT
+O_NASTH
+	sv_setref_pv($arg, "Asshole", (void *)$var);
+
+#
+# Input methods
+#
+INPUT
+O_NASTH
+	if (sv_isobject($arg) && (SvTYPE(SvRV($arg)) == SVt_PVMG)) {
+		$var = ($type)SvIV((SV *)SvRV($arg));
+	} else {
+		warn(\"${Package}::$func_name() --\"
+		     \" $var is not a valid nasthole.\");
+		XSRETURN_UNDEF;
+	}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-12-08T17:32:07.572093Z"
+   url="svn+ssh://coleridge/svn/nastd/trunk/Makefiles"
+   last-author="bjc"
+   kind="dir"
+   uuid="2641c99b-6c07-0410-920d-927397d2d5d0"
+   revision="8"/>
+<entry
+   committed-rev="1"
+   name="build"
+   text-time="2005-12-24T00:00:40.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="01035c5b5538c67671bde47d4f0fa2e8"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:38.000000Z"/>
+<entry
+   name="os"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="config"
+   text-time="2005-12-24T00:00:40.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="89fb3d48473f6edb3478d3534c5b0299"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:40.000000Z"/>
+</wc-entries>

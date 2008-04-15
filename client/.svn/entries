@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-12-08T17:32:07.572093Z"
+   url="svn+ssh://coleridge/svn/nastd/trunk/client"
+   last-author="bjc"
+   kind="dir"
+   uuid="2641c99b-6c07-0410-920d-927397d2d5d0"
+   revision="8"/>
+<entry
+   committed-rev="1"
+   name="nastapi.c"
+   text-time="2005-12-24T00:01:04.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="58742753ba1da3456bab621d9ce1b743"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:03.000000Z"/>
+<entry
+   committed-rev="1"
+   name="thread.c"
+   text-time="2005-12-24T00:01:04.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="b2c15aef2f6f15a0c7d005692aab8988"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:03.000000Z"/>
+<entry
+   committed-rev="1"
+   name=".pure"
+   text-time="2005-12-24T00:01:04.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:04.000000Z"/>
+<entry
+   committed-rev="1"
+   name=".cvsignore"
+   text-time="2005-12-24T00:01:04.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="d3ab4aa9b2ce78dcf3467cf1a8ddb6d1"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:04.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Makefile"
+   text-time="2005-12-24T00:01:04.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="e8640e9f9f184a80e9bed5d894578c58"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:04.000000Z"/>
+<entry
+   committed-rev="1"
+   name="thread.h"
+   text-time="2005-12-24T00:01:04.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="a548e3157e8dba41d2ab2bb83a20aafe"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:01:04.000000Z"/>
+</wc-entries>

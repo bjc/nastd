@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-12-08T17:32:07.572093Z"
+   url="svn+ssh://coleridge/svn/nastd/trunk/server"
+   last-author="bjc"
+   kind="dir"
+   uuid="2641c99b-6c07-0410-920d-927397d2d5d0"
+   revision="8"/>
+<entry
+   committed-rev="1"
+   name="periodic.c"
+   text-time="2005-12-24T00:00:52.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="9ab6f8fb29a2ab22ad6c371b670aaa78"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:49.000000Z"/>
+<entry
+   committed-rev="1"
+   name="cdbpriv.h"
+   text-time="2005-12-24T00:00:52.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="b04ca2fe0d69d678bbd954d5ca1046c6"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:49.000000Z"/>
+<entry
+   committed-rev="1"
+   name="nastdio.c"
+   text-time="2005-12-24T00:00:52.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="14fde9ce0366ccada683bc6bfad47a03"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:49.000000Z"/>
+<entry
+   committed-rev="1"
+   name="periodic.h"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="aa6705635a8d4265cbd6348823b538c2"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:49.000000Z"/>
+<entry
+   committed-rev="1"
+   name="nastdio.h"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="9df20501cc13a633b8c393c72649546d"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:49.000000Z"/>
+<entry
+   committed-rev="1"
+   name="thread.c"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="4cd24cd9f6877f80b7921efdfb03751c"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name=".pure"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name="nastd.c"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="d09727d31e0c616e3b50f138a98a7c6f"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mysqldb.c"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="9c95871bbe8737d0ea68f0a4fac84629"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name="thread.h"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="f50e611ab3f72f79ad5d952781376665"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name="array.c"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="b517ceff3a424b967e6d38e8b325b6aa"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mysqldb.h"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="f9765376cccfa9f80c82f7a7b5c747c6"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name="log.c"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="ae49c6ca92752738c2a0f6dd81666817"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name="array.h"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="9ad3ee2195e9917b98173825d0ddf53a"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:51.000000Z"/>
+<entry
+   committed-rev="1"
+   name="fqm.c"
+   text-time="2005-12-24T00:00:53.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="e5f212af7ef0ce67764a5017f22c43af"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:50.000000Z"/>
+<entry
+   committed-rev="1"
+   name="memdb.c"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="b82f28b318f365f9b9289328a21aef76"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:51.000000Z"/>
+<entry
+   committed-rev="1"
+   name="md5.c"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="8e1191d8f06f198585e0c025232a5411"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:51.000000Z"/>
+<entry
+   committed-rev="1"
+   name="log.h"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="1acee0ec3cf339b45df070838a7229c1"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:51.000000Z"/>
+<entry
+   committed-rev="1"
+   name="fqm.h"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="1b4fc62462465934914fcf7614cb37b1"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:51.000000Z"/>
+<entry
+   committed-rev="1"
+   name="cdb_find.c"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="8b7a134f62e6b2ca0823a26b9e055358"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:51.000000Z"/>
+<entry
+   committed-rev="1"
+   name="cdb.c"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="6ae6b86a75220cd0334cd23b8ffbf8fd"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:51.000000Z"/>
+<entry
+   committed-rev="1"
+   name="cdb_unpack.c"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="72a688b528b8ec040f755a6a24f48f23"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:51.000000Z"/>
+<entry
+   committed-rev="1"
+   name="memdb.h"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="6312c1468cf623288611a981e173ef5f"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:52.000000Z"/>
+<entry
+   committed-rev="1"
+   name="md5.h"
+   text-time="2005-12-24T00:00:54.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="c6837ec020c3d9e7c2792b2a114853fe"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:52.000000Z"/>
+<entry
+   committed-rev="1"
+   name="cdb_hash.c"
+   text-time="2005-12-24T00:00:55.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="2f63db3059a51e03db8d2b6502edaf0a"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:52.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Makefile"
+   text-time="2005-12-24T00:00:55.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="fe3c112570d1215c4b5aafe76042f53c"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:52.000000Z"/>
+<entry
+   committed-rev="1"
+   name=".cvsignore"
+   text-time="2005-12-24T00:00:55.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="b3345144ac86fa19fdfc3f4845fded00"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:52.000000Z"/>
+<entry
+   committed-rev="1"
+   name="cdb.h"
+   text-time="2005-12-24T00:00:55.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="bea51b513470729ab998b007e2ea760f"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:52.000000Z"/>
+</wc-entries>

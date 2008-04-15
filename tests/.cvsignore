@@ -1,0 +1,14 @@
+getnast
+killnast
+randnast
+statnast
+stressnast
+mtstressnast
+updnast
+.pure
+*.o
+*.so
+*.a
+*.core
+*.gmon
+tags

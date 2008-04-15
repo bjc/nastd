@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-12-08T17:32:07.572093Z"
+   url="svn+ssh://coleridge/svn/nastd/trunk/include"
+   last-author="bjc"
+   kind="dir"
+   uuid="2641c99b-6c07-0410-920d-927397d2d5d0"
+   revision="8"/>
+<entry
+   committed-rev="1"
+   name="nastd.h"
+   text-time="2005-12-24T00:00:48.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="a2a8507454598351d2fb4d92de8fac34"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:47.000000Z"/>
+<entry
+   committed-rev="1"
+   name="nastipc.h"
+   text-time="2005-12-24T00:00:48.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="c9c5a4de31ca1526065fba75540ca47d"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:48.000000Z"/>
+<entry
+   committed-rev="1"
+   name="compat.h"
+   text-time="2005-12-24T00:00:48.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="59e26d4dfdabe5879df3b1d38bc20380"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:48.000000Z"/>
+<entry
+   committed-rev="1"
+   name="conf.h"
+   text-time="2005-12-24T00:00:48.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="687df4cd84fcc53ab4edb6cb1bc967e0"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:48.000000Z"/>
+<entry
+   committed-rev="1"
+   name="config.h"
+   text-time="2005-12-24T00:00:48.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="6ff11b17126158149127110856fcab5d"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:48.000000Z"/>
+<entry
+   committed-rev="1"
+   name="version.h"
+   text-time="2005-12-24T00:00:48.000000Z"
+   committed-date="2005-12-08T17:32:07.572093Z"
+   checksum="c8e8460535f050ccc9e1a8024b65afde"
+   last-author="bjc"
+   kind="file"
+   prop-time="2005-12-24T00:00:48.000000Z"/>
+</wc-entries>
