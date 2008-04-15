@@ -58,16 +58,10 @@ mysqldb_connect_new()
 		return NULL;
 	}
 
-	if (!mysql_connect(dbh, config.mysql_host,
-			   config.mysql_user, config.mysql_pass)) {
+	if (!mysql_real_connect(dbh, config.mysql_host,
+                                config.mysql_user, config.mysql_pass,
+                                db_dbn, 0, NULL, 0)) {
 		log_err("Couldn't open connection to database: %s.",
-			mysql_error(dbh));
-		mysqldb_connect_close(dbh);
-		return NULL;
-	}
-
-	if (mysql_select_db(dbh, db_dbn)) {
-		log_err("Couldn't open database: %s.",
 			mysql_error(dbh));
 		mysqldb_connect_close(dbh);
 		return NULL;
