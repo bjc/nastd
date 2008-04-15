@@ -4,7 +4,7 @@
 
 # Where to place things.
 #PREFIX=		/opt
-PREFIX=		/home/shmit
+PREFIX=		/Users/bjc
 BINDIR=		${PREFIX}/bin
 SBINDIR=	${PREFIX}/sbin
 DATADIR=	${PREFIX}/libdata/nast
@@ -19,8 +19,8 @@ PERL=		NO
 #PURIFY=		purify
 
 # MySQL library and include file location.
-MYSQL_INCDIR=	/local/include
-MYSQL_LIBDIR=	/local/lib
+MYSQL_INCDIR=	/usr/local/mysql/include
+MYSQL_LIBDIR=	/usr/local/mysql/lib
 
 # Generic Database configuration.
 DBUSER=		\"root\"
@@ -33,7 +33,7 @@ DBTBL=		\"master\"
 DBSELECT=	"\"SELECT %s FROM %s WHERE %s='%s'"\"
 
 # Location of Objective C include files.
-OBJCINC=	-I/local/include/objc
+OBJCINC=	-I/usr/include/objc
 
 # Debugging flags.
 DEBUGFLAGS=	-g -DTEST -DVERBOSE -Wall -Werror

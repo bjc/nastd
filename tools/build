@@ -24,6 +24,9 @@ SunOS)
 		target=sunos
 	fi
 	;;
+Darwin)
+        target=darwin
+        ;;
 *)
 	echo "I don't know how to build for your platform, please poke" 1>&2
 	echo "around in Makefiles/os and tools/build to get the server" 1>&2
