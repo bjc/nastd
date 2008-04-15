@@ -7,6 +7,7 @@
 #include "thread.h"
 
 #include <errno.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -54,9 +55,9 @@ static counter_t delrate;
 static counter_t updrate;
 
 static unsigned int
-hashkey(const char *key, int keylen)
+hashkey(const unsigned char *key, int keylen)
 {
-	char md5hash[32];
+	unsigned char md5hash[32];
 	unsigned int rc;
 
 	memset(md5hash, 0, sizeof(md5hash));
@@ -157,7 +158,7 @@ memdb_delete()
 }
 
 int
-memdb_add(const char *key, int keylen, array_t *vals)
+memdb_add(const unsigned char *key, int keylen, array_t *vals)
 {
 	cachent_t *ent;
 	int hkey;
@@ -253,8 +254,12 @@ memdb_add(const char *key, int keylen, array_t *vals)
 				ent_delete(&p->ent);
 				free(p);
 				break;
+
+			case C_UPD:
+			case C_TRYVAL:
 			default:
 				/* XXX: Do an update instead of an add. */
+				log_info("XXX: Can't handle request.");
 			}
 		} else {
 			p->next = ent;
@@ -268,7 +273,7 @@ memdb_add(const char *key, int keylen, array_t *vals)
 }
 
 int
-memdb_del(const char *key, int keylen)
+memdb_del(const unsigned char *key, int keylen)
 {
 	cachent_t *p;
 	int hkey;
@@ -319,7 +324,7 @@ memdb_del(const char *key, int keylen)
 }
 
 int
-memdb_get(const char *key, int keylen, array_t *vals)
+memdb_get(const unsigned char *key, int keylen, array_t *vals)
 {
 	cachent_t *p, *q;
 	int hkey;
@@ -394,7 +399,7 @@ memdb_get(const char *key, int keylen, array_t *vals)
 }
 
 int
-memdb_upd(const char *key, int keylen, array_t *vals)
+memdb_upd(const unsigned char *key, int keylen, array_t *vals)
 {
 	cachent_t *p;
 	int hkey;

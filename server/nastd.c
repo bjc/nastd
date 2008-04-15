@@ -81,7 +81,7 @@ static int
 do_client_connect(int sock)
 {
 	struct sockaddr_un saremote;
-	int addrlen;
+	socklen_t addrlen;
 	int s;
 
 	addrlen = sizeof(saremote);

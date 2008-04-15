@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/time.h>
 
 RCSID("$Id: periodic.c,v 1.9 2000/05/17 21:52:34 shmit Exp $");
 
@@ -29,10 +30,12 @@ periodic_looper(void *arg)
 
 	count = 0;
 	for (;;) {
+		struct timeval tv;
 		struct timespec ts;
 
-		clock_gettime(CLOCK_REALTIME, &ts);
-		ts.tv_sec += 1;
+		gettimeofday(&tv, NULL);
+		memset(&ts, 0, sizeof(ts));
+		ts.tv_sec = tv.tv_sec + 1;
 		(void)cond_timedwait(self->cond, &ts);
 
 		count++;

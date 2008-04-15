@@ -43,14 +43,15 @@ arr_send_response(int sock, short reqid, char r_code, array_t *aa)
 {
 	char *s;
 	char buffer[1024];
-	short l, i;
+	short l, i, n_reqid, n_l;
 	ssize_t wrote;
 
 	/* Save space for buffer length. */
 	l = sizeof(short);
 
 	/* Add request ID. */
-	memcpy(buffer+l, &htons(reqid), sizeof(reqid));
+        n_reqid = htons(reqid);
+	memcpy(buffer+l, &n_reqid, sizeof(n_reqid));
 	l += sizeof(reqid);
 
 	/* Add OK or ERR. */
@@ -79,7 +80,8 @@ arr_send_response(int sock, short reqid, char r_code, array_t *aa)
 	}
 
 	/* Fill in buffer length. */
-	memcpy(buffer, &htons(l), sizeof(short));
+        n_l = htons(l);
+	memcpy(buffer, &n_l, sizeof(short));
 
 	wrote = 0;
 	while (wrote < l) {
@@ -270,7 +272,7 @@ REQHANDLER(do_fallthrough)
 	}
 
 	/* If we're this far, the memdb doesn't have this key. Add it. */
-	(void)memdb_add(req->req, strlen(req->req), aa);
+	(void)memdb_add((unsigned char *)req->req, strlen(req->req), aa);
 
 	array_delete(aa);
 
@@ -295,7 +297,7 @@ do_get(int s, short reqid, client_opts *cops, const char *buffer,
 
 	/* Check memdb first. */
 	if (cops->opts->use_qcache && !cops->opts->always_fallthrough) {
-		if (memdb_get(buffer, bufflen, aa) == 0) {
+		if (memdb_get((unsigned char *)buffer, bufflen, aa) == 0) {
 			log_info("Found `%s' in memdb.", buffer);
 			if (arr_send_response(s, reqid, NASTOK, aa) == -1) {
 				array_delete(aa);
@@ -387,7 +389,7 @@ do_update(int s, short reqid, client_opts *cops, const char *buffer,
 	  size_t bufflen)
 {
 	array_t *aa;
-	char *key;
+	unsigned char *key;
 	int keylen;
 
 	for (keylen = 0; keylen < bufflen; keylen++) {

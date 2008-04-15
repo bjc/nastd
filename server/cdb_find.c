@@ -2,6 +2,7 @@
 
 #include <errno.h>
 #include <stdio.h>
+#include <string.h>
 #include <sys/types.h>
 
 #ifndef SEEK_SET
@@ -11,7 +12,7 @@
 RCSID("$Id: cdb_find.c,v 1.2 2000/02/29 19:31:33 shmit Exp $");
 
 static int
-cdb_bread(char **ptr, char *endptr, char *buf, unsigned int len)
+cdb_bread(char **ptr, char *endptr, unsigned char *buf, unsigned int len)
 {
 	if ((*ptr)+len > endptr) {
 		errno = EIO;
@@ -24,9 +25,9 @@ cdb_bread(char **ptr, char *endptr, char *buf, unsigned int len)
 }
 
 static int
-match(char **ptr, char *endptr, const char *key, unsigned int len)
+match(char **ptr, char *endptr, const unsigned char *key, unsigned int len)
 {
-	char buf[32];
+	unsigned char buf[32];
 	int n;
 	int i;
 
@@ -49,11 +50,11 @@ match(char **ptr, char *endptr, const char *key, unsigned int len)
 }
 
 int
-cdb_find(char *buff, off_t bufflen, const char *key, int len,
-	 char **ret, uint32_t *retlen)
+cdb_find(char *buff, off_t bufflen, const unsigned char *key,
+         unsigned int len, char **ret, uint32_t *retlen)
 {
 	char *cur, *end;
-	char packbuf[8];
+	unsigned char packbuf[8];
 	uint32_t pos;
 	uint32_t h;
 	uint32_t lenhash;

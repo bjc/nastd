@@ -41,8 +41,8 @@ static int sec_c;
 static float onemin_c, fivemin_c, fifteenmin_c;
 
 static int
-cdb_findbykey(char *mcdb, int len, const char *key, int keylen,
-	      char **data, int *dlen)
+cdb_findbykey(char *mcdb, int len, const unsigned char *key, int keylen,
+	      char **data, uint32_t *dlen)
 {
 	if (cdb_find(mcdb, len, key, keylen, data, dlen) != 1)
 		return -1;
@@ -60,9 +60,10 @@ cdb_new()
 	char cdbfields_s[1024], newkey[1024], newtbl[1024], newdbn[1024];
 	char newsep;
 	struct stat sb;
-	int i, fieldslen, newfieldcount;
+	int fieldslen, newfieldcount;
 	int fd;
 	size_t len;
+	uint32_t i;
 
 	log_info("Initialising CDB interface.");
 
@@ -106,8 +107,8 @@ cdb_new()
 	(void)close(fd);
 
 	/* Get the key out of the CDB, so clients know how to search. */
-	if (cdb_findbykey(newcdb, len, "_KEY_", strlen("_KEY_"),
-			  &p, &i) == -1) {
+	if (cdb_findbykey(newcdb, len, (unsigned char *)"_KEY_",
+                          strlen("_KEY_"), &p, &i) == -1) {
 		log_err("Couldn't find `_KEY_' in the CDB.");
 		munmap(newcdb, len);
 		return -1;
@@ -122,7 +123,8 @@ cdb_new()
 	newkey[i] = '\0';
 
 	/* Get the dbname out of the CDB, so mysql knows which db to use. */
-	if (cdb_findbykey(newcdb, len, "_DB_", strlen("_DB_"), &p, &i) == -1) {
+	if (cdb_findbykey(newcdb, len, (unsigned char *)"_DB_",
+                          strlen("_DB_"), &p, &i) == -1) {
 		log_err("Warning: Couldn't find `_DB_' in the CDB.");
 		strncpy(newdbn, DBNAME, sizeof(newdbn));
 	} else {
@@ -137,8 +139,8 @@ cdb_new()
 	}
 
 	/* Get the table out of the CDB, so mysql knows which to use. */
-	if (cdb_findbykey(newcdb, len, "_TABLE_", strlen("_TABLE_"),
-			  &p, &i) == -1) {
+	if (cdb_findbykey(newcdb, len, (unsigned char *)"_TABLE_",
+                          strlen("_TABLE_"), &p, &i) == -1) {
 		log_err("Warning: Couldn't find `_TABLE_' in the CDB.");
 		strncpy(newtbl, DBTBL, sizeof(newtbl));
 	} else {
@@ -153,16 +155,16 @@ cdb_new()
 	}
 
 	/* Get the delimiter out of the CDB file. */
-	if (cdb_findbykey(newcdb, len, "_DELIM_", strlen("_DELIM_"),
-			  &p, &i) == -1) {
+	if (cdb_findbykey(newcdb, len, (unsigned char *)"_DELIM_",
+                          strlen("_DELIM_"), &p, &i) == -1) {
 		log_info("Couldn't find `_DELIM_' in the CDB. Using default.");
 		newsep = ':';
 	} else
 		newsep = *p;
 
 	/* Now get the column names. */
-	if (cdb_findbykey(newcdb, len, "_VALUES_", strlen("_VALUES_"),
-			  &p, &i) == -1) {
+	if (cdb_findbykey(newcdb, len, (unsigned char *)"_VALUES_",
+                          strlen("_VALUES_"), &p, &i) == -1) {
 		log_err("Couldn't find `_VALUES_' in the CDB.");
 		munmap(newcdb, len);
 		return -1;
@@ -231,11 +233,11 @@ cdb_new()
 }
 
 int
-cdb_get(const char *key, int keylen, array_t *aa)
+cdb_get(const unsigned char *key, int keylen, array_t *aa)
 {
 	char *s_p, *e_p;
 	char *data;
-	int dlen;
+	uint32_t dlen;
 
 	rw_mutex_read_lock(cdb_lk);
 	if (cdb_findbykey(memcdb, cdb_len, key, keylen, &data, &dlen) == -1) {
