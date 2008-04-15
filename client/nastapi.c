@@ -4,7 +4,6 @@
 #include "thread.h"
 
 #include <errno.h>
-#include <thread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -518,10 +517,11 @@ nast_free_result(nast_array *aa)
 static int
 add_reqid(char *buffer)
 {
-	unsigned short tid;
+	unsigned short tid, n_tid;
 
 	tid = thread_id();
-	memcpy(buffer, &htons(tid), sizeof(tid));
+	n_tid = htons(tid);
+	memcpy(buffer, &n_tid, sizeof(tid));
 
 	return sizeof(tid);
 }
@@ -531,7 +531,7 @@ nast_options_get(nasth *s, nast_options *opts)
 {
 	nast_array *aa;
 	char buffer[512];
-	short bufflen, i;
+	short bufflen, n_bufflen, i;
 
 	if (s == NULL) {
 		fprintf(stderr, "ERROR: Can't get options: no sphincter.\n");
@@ -544,7 +544,8 @@ nast_options_get(nasth *s, nast_options *opts)
 	snprintf(buffer+bufflen, sizeof(buffer)-bufflen, "%c%c",
 		 NASTCMD, NASTOPTGET);
 	bufflen += 2 * sizeof(char);
-	memcpy(buffer, &htons(bufflen), sizeof(short));
+	n_bufflen = htons(bufflen);
+	memcpy(buffer, &n_bufflen, sizeof(short));
 	sendcmd(s, buffer, bufflen);
 	if (getresponse(s) == -1)
 		return -1;
@@ -616,7 +617,7 @@ int
 nast_options_set(nasth *s, nast_options *opts)
 {
 	char buffer[512];
-	short bufflen;
+	short bufflen, n_bufflen;
 
 	if (s == NULL) {
 		fprintf(stderr, "ERROR: Can't set options: no sphincter.\n");
@@ -672,7 +673,8 @@ nast_options_set(nasth *s, nast_options *opts)
 		buffer[bufflen+1] = OPTFALSE;
 	bufflen += 2;
 
-	memcpy(buffer, &htons(bufflen), sizeof(short));
+	n_bufflen = htons(bufflen);
+	memcpy(buffer, &n_bufflen, sizeof(short));
 	sendcmd(s, buffer, bufflen);
 	return getresponse(s);
 }
@@ -681,7 +683,7 @@ int
 nast_add(nasth *s, const char *query)
 {
 	char buffer[512];
-	short bufflen;
+	short bufflen, n_bufflen;
 
 	if (s == NULL) {
 		fprintf(stderr, "ERROR: Can't add: no sphincter.\n");
@@ -695,7 +697,8 @@ nast_add(nasth *s, const char *query)
 		 NASTCMD, NASTADD, query);
 	bufflen += (2 + strlen(query))*sizeof(char);
 
-	memcpy(buffer, &htons(bufflen), sizeof(short));
+        n_bufflen = htons(bufflen);
+	memcpy(buffer, &n_bufflen, sizeof(short));
 	sendcmd(s, buffer, bufflen);
 	return getresponse(s);
 }
@@ -704,7 +707,7 @@ int
 nast_del(nasth *s, const char *query)
 {
 	char buffer[512];
-	short bufflen;
+	short bufflen, n_bufflen;
 
 	if (s == NULL) {
 		fprintf(stderr, "ERROR: Can't delete: no sphincter.\n");
@@ -718,7 +721,8 @@ nast_del(nasth *s, const char *query)
 		 NASTCMD, NASTDEL, query);
 	bufflen += (2 + strlen(query))*sizeof(char);
 
-	memcpy(buffer, &htons(bufflen), sizeof(short));
+        n_bufflen = htons(bufflen);
+	memcpy(buffer, &n_bufflen, sizeof(short));
 	sendcmd(s, buffer, bufflen);
 	return getresponse(s);
 }
@@ -727,7 +731,7 @@ int
 nast_get(nasth *s, const char *query)
 {
 	char buffer[512];
-	short bufflen;
+	short bufflen, n_bufflen;
 
 	if (s == NULL) {
 		fprintf(stderr, "ERROR: Can't get: no sphincter.\n");
@@ -741,7 +745,8 @@ nast_get(nasth *s, const char *query)
 		 NASTCMD, NASTGET, query);
 	bufflen += (2 + strlen(query))*sizeof(char);
 
-	memcpy(buffer, &htons(bufflen), sizeof(short));
+        n_bufflen = htons(bufflen);
+	memcpy(buffer, &n_bufflen, sizeof(short));
 	sendcmd(s, buffer, bufflen);
 	return getresponse(s);
 }
@@ -750,7 +755,7 @@ void
 nast_die(nasth *s)
 {
 	char buffer[512];
-	short bufflen;
+	short bufflen, n_bufflen;
 
 	if (s == NULL) {
 		fprintf(stderr, "ERROR: Can't kill nast: no sphincter.\n");
@@ -764,7 +769,8 @@ nast_die(nasth *s)
 		 NASTCMD, NASTDIE);
 	bufflen += 2 * sizeof(char);
 
-	memcpy(buffer, &htons(bufflen), sizeof(short));
+        n_bufflen = htons(bufflen);
+	memcpy(buffer, &n_bufflen, sizeof(short));
 	sendcmd(s, buffer, bufflen);
 	return;
 }
@@ -774,7 +780,7 @@ nast_upd(nasth *s, const char *key, nast_array *valarray)
 {
 	char buffer[512];
 	int i;
-	short bufflen;
+	short bufflen, n_bufflen;
 
 	if (s == NULL) {
 		fprintf(stderr, "ERROR: Can't update: no sphincter.\n");
@@ -808,7 +814,8 @@ nast_upd(nasth *s, const char *key, nast_array *valarray)
 		}
 	}
 
-	memcpy(buffer, &htons(bufflen), sizeof(short));
+        n_bufflen = htons(bufflen);
+	memcpy(buffer, &n_bufflen, sizeof(short));
 	sendcmd(s, buffer, bufflen);
 	return getresponse(s);
 }
@@ -817,7 +824,7 @@ int
 nast_stats(nasth *s)
 {
 	char buffer[512];
-	short bufflen;
+	short bufflen, n_bufflen;
 
 	if (s == NULL) {
 		fprintf(stderr, "ERROR: Can't get stats: no sphincter.\n");
@@ -830,7 +837,9 @@ nast_stats(nasth *s)
 	snprintf(buffer+bufflen, sizeof(buffer)-bufflen, "%c%c",
 		 NASTCMD, NASTSTATS);
 	bufflen += 2 * sizeof(char);
-	memcpy(buffer, &htons(bufflen), sizeof(short));
+
+        n_bufflen = htons(bufflen);
+	memcpy(buffer, &n_bufflen, sizeof(short));
 	sendcmd(s, buffer, bufflen);
 	return getresponse(s);
 }

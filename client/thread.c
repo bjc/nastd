@@ -15,7 +15,7 @@ thread_id()
 {
 	short i;
 
-	i = (pthread_self() & 0xff) | (getpid() << 8);
+	i = ((unsigned int)pthread_self() & 0xff) | (getpid() << 8);
 	return i;
 }
 
