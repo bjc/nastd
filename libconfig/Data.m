@@ -38,12 +38,6 @@
 #include <sys/types.h>
 
 @implementation DataObject
--dealloc
-{
-	free(self);
-	return nil;
-}
-
 -(char *)createCStr
 {
 	return NULL;

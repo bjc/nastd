@@ -40,7 +40,6 @@
  * Generic Entry and Data objects.
  */
 @interface DataObject: Object
--dealloc;
 -(char *)createCStr;
 -(String *)createStr;
 -setFromBuffer: (const char *)buffer withLength: (int)len;
@@ -54,8 +53,8 @@
 }
 
 -init;
--setKey: keyName;
--setData: dataPtr;
+-setKey: (String *)keyName;
+-setData: (DataObject *)dataPtr;
 -getKey;
 -getData;
 @end
