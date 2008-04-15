@@ -52,7 +52,7 @@ main(int argc, char *argv[])
 				after.tv_usec += 1000000;
 			}
 			fprintf(stderr, "Request time: %2ld.%06ld seconds.\n",
-				after.tv_sec, after.tv_usec);
+				after.tv_sec, (unsigned long)after.tv_usec);
 		}
 	}
 	nast_sphincter_close(nasthole);
