@@ -1,5 +1,3 @@
-/* $Id: md5.h,v 1.2 2000/03/27 22:23:25 shmit Exp $ */
-
 /*
  * Copyright (C) 1991-2, RSA Data Security, Inc. Created 1991.
  * All rights reserved.

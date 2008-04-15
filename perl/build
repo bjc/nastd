@@ -1,6 +1,4 @@
 #!/bin/sh
-#
-# $Id: build,v 1.2 2000/05/16 19:27:05 shmit Exp $
 
 if [ $# -lt 2 ]; then
 	echo "Usage: $0 makecmd perlflag args" 2>&1

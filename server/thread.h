@@ -1,5 +1,3 @@
-/* $Id: thread.h,v 1.5 2000/03/15 00:09:25 shmit Exp $ */
-
 #ifndef THREAD_H
 #	define THREAD_H
 

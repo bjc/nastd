@@ -1,5 +1,3 @@
-# $Id: test.pl,v 1.20 2001/03/23 00:06:09 shmit Exp $
-#
 # Before `make install' is performed this script should be runnable with
 # `make test'. After `make install' it should work as `perl test.pl'
 

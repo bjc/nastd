@@ -1,5 +1,3 @@
-# $Id: Makefile,v 1.17 2001/10/04 23:57:09 shmit Exp $
-
 OBJS=	array.o nastd.o nastdio.o cdb.o cdb_find.o cdb_hash.o		\
 	cdb_unpack.o fqm.o log.o md5.o memdb.o mysqldb.o periodic.o	\
 	thread.o ../libconfig/libconfig.a

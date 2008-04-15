@@ -27,8 +27,6 @@
 
 #include <string.h>
 
-RCSID("$Id: md5.c,v 1.2 2000/03/27 22:23:25 shmit Exp $");
-
 /* Constants for MD5Transform routine. */
 #define S11 7
 #define S12 12

@@ -1,5 +1,3 @@
-# $Id: Makefile,v 1.10 2001/01/19 02:54:37 shmit Exp $
-
 LIBOBJS= nastapi.o thread.o
 
 all-lib:

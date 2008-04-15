@@ -13,8 +13,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-RCSID("$Id: mysqldb.c,v 1.30 2001/10/10 20:29:47 shmit Exp $");
-
 extern fieldent *db_fields;
 extern char db_key[1024];
 extern char db_dbn[1024];

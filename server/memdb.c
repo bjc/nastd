@@ -12,8 +12,6 @@
 #include <string.h>
 #include <time.h>
 
-RCSID("$Id: memdb.c,v 1.27 2001/10/04 23:57:10 shmit Exp $");
-
 #define HASHSIZE 1024
 
 extern time_t cdb_mtime;

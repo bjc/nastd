@@ -1,5 +1,3 @@
-/* $Id: config.h,v 1.3 2001/11/09 15:54:37 shmit Exp $ */
-
 #ifndef CONFIG_H
 #	define CONFIG_H
 

@@ -20,8 +20,6 @@
 #include <sys/un.h>
 #include <unistd.h>
 
-RCSID("$Id: nastdio.c,v 1.13 2001/10/29 11:17:13 shmit Exp $");
-
 extern fqm_t *fqm;
 
 extern fieldent *db_fields;

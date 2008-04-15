@@ -6,8 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-RCSID("$Id: array.c,v 1.10 2000/10/17 23:38:27 shmit Exp $");
-
 string_t *
 string_new(int slen, char *strdata)
 {

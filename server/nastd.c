@@ -21,8 +21,6 @@
 #include <time.h>
 #include <unistd.h>
 
-RCSID("$Id: nastd.c,v 1.8 2001/11/09 15:54:38 shmit Exp $");
-
 char *progname;
 time_t start_time;
 

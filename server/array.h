@@ -1,5 +1,3 @@
-/* $Id: array.h,v 1.4 2000/10/17 23:38:27 shmit Exp $ */
-
 #ifndef ARRAY_H
 #define ARRAY_H
 

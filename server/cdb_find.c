@@ -9,8 +9,6 @@
 #define SEEK_SET 0
 #endif
 
-RCSID("$Id: cdb_find.c,v 1.2 2000/02/29 19:31:33 shmit Exp $");
-
 static int
 cdb_bread(char **ptr, char *endptr, unsigned char *buf, unsigned int len)
 {

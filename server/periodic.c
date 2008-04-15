@@ -11,8 +11,6 @@
 #include <string.h>
 #include <sys/time.h>
 
-RCSID("$Id: periodic.c,v 1.9 2000/05/17 21:52:34 shmit Exp $");
-
 struct _per_thread_t {
 	cond_t *cond;
 	thread_t *tid;

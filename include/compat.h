@@ -1,5 +1,3 @@
-/* $Id: compat.h,v 1.4 2000/03/21 19:06:58 shmit Exp $ */
-
 #ifndef COMPAT_H
 #	define COMPAT_H
 

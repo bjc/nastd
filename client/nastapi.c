@@ -15,8 +15,6 @@
 #include <signal.h>
 #include <unistd.h>
 
-RCSID("$Id: nastapi.c,v 1.13 2001/10/29 11:17:11 shmit Exp $");
-
 char *nast_errmsgs[] = {
 	"No errors",
 	"The NASTD server has gone away",

@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <sys/types.h>
 
-RCSID("$Id: compat.c,v 1.1 2000/03/07 22:39:27 shmit Exp $");
-
 #if NEED_SETPROCTITLE
 void
 setproctitle(const char *fmt, ...)

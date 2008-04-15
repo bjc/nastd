@@ -1,5 +1,3 @@
-# $Id: Makefile,v 1.15 2000/12/27 06:51:51 shmit Exp $
-
 LIBASS=	../client/libnast.a
 
 tclients: getnast statnast stressnast randnast mtstressnast updnast	\

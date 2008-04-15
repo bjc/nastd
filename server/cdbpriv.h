@@ -1,5 +1,3 @@
-/* $Id: cdbpriv.h,v 1.2 2000/02/29 19:15:28 shmit Exp $ */
-
 #ifndef CDBPRIV_H
 #define CDBPRIV_H
 

@@ -7,8 +7,6 @@
 #include <pthread.h>
 #endif
 
-RCSID("$Id: thread.c,v 1.6 2000/09/13 20:21:30 shmit Exp $");
-
 #ifdef THREADSAFECLIENT
 short
 thread_id()

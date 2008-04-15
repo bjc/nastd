@@ -1,5 +1,3 @@
-/* $Id: nastipc.h,v 1.3 2001/01/19 00:29:26 shmit Exp $ */
-
 #ifndef NASTIPC_H
 #define NASTIPC_H
 

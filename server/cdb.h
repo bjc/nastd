@@ -1,5 +1,3 @@
-/* $Id: cdb.h,v 1.11 2000/05/17 19:32:58 shmit Exp $ */
-
 #ifndef CDB_H
 #define CDB_H
 

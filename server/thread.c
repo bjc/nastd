@@ -12,8 +12,6 @@
 #include <time.h>
 #include <unistd.h>
 
-RCSID("$Id: thread.c,v 1.6 2000/03/21 19:18:24 shmit Exp $");
-
 int
 thread_new(thread_t *thread, void *(*thread_func)(void *), void *arg)
 {

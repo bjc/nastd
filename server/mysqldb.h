@@ -1,5 +1,3 @@
-/* $Id: mysqldb.h,v 1.7 2000/11/08 20:04:55 shmit Exp $ */
-
 #ifndef MYSQLDB_H
 #define MYSQLDB_H
 

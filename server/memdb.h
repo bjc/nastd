@@ -1,5 +1,3 @@
-/* $Id: memdb.h,v 1.8 2000/05/17 19:32:58 shmit Exp $ */
-
 #ifndef MEMDB_H
 #define MEMDB_H
 

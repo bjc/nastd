@@ -10,8 +10,6 @@
 #include <string.h>
 #include <unistd.h>
 
-RCSID("$Id: fqm.c,v 1.33 2001/10/29 11:17:13 shmit Exp $");
-
 /* Global Variables */
 fqm_t *fqm;
 

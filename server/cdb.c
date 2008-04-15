@@ -18,8 +18,6 @@
 #include <sys/uio.h>
 #include <unistd.h>
 
-RCSID("$Id: cdb.c,v 1.64 2001/10/19 22:28:07 shmit Exp $");
-
 time_t cdb_mtime;
 
 static char *memcdb = NULL;

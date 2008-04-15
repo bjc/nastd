@@ -1,5 +1,3 @@
-/* $Id: nastdio.h,v 1.1 2000/09/13 20:21:34 shmit Exp $ */
-
 #ifndef NASTDIO_H
 #define NASTDIO_H
 

@@ -9,8 +9,6 @@
 #include <time.h>
 #include <unistd.h>
 
-RCSID("$Id: log.c,v 1.8 2000/11/13 18:47:17 shmit Exp $");
-
 extern char *progname;
 
 #if 0

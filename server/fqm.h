@@ -1,5 +1,3 @@
-/* $Id: fqm.h,v 1.9 2000/11/08 19:50:24 shmit Exp $ */
-
 #ifndef FQM_H
 #define FQM_H
 

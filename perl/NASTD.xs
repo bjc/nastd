@@ -1,5 +1,3 @@
-/* $Id: NASTD.xs,v 1.5 2001/10/29 11:18:20 shmit Exp $ */
-
 #include "EXTERN.h"
 #include "perl.h"
 #include "XSUB.h"

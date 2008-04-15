@@ -1,5 +1,3 @@
-# $Id: NASTD.pm,v 1.7 2001/10/29 11:18:20 shmit Exp $
-
 package NASTD;
 
 use strict;

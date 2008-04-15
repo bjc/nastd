@@ -12,8 +12,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-RCSID("$Id: config.m,v 1.5 2001/11/09 15:54:38 shmit Exp $");
-
 /*
  * Global variables.
  */
