@@ -23,9 +23,7 @@ MYSQL_LIBDIR=	/usr/local/mysql/lib
 # Generic Database configuration.
 DBUSER=		\"root\"
 DBPASS=		NULL
-#DBPASS=		\"h4x0rZ,uhb0und!\"
 DBHOST=		NULL
-#DBHOST=		\"mysql.dev.rcn.net\"
 DBNAME=		\"password\"
 DBTBL=		\"master\"
 DBSELECT=	"\"SELECT %s FROM %s WHERE %s='%s'"\"
