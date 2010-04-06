@@ -31,6 +31,7 @@
 
 #if FREEBSD_2
 typedef u_int32_t uint32_t;
+typedef u_int64_t uint64_t;
 #endif /* FREEBSD_2 */
 #endif /* OS_FREEBSD */
 
