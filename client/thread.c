@@ -13,7 +13,7 @@ thread_id()
 {
 	short i;
 
-	i = ((unsigned int)pthread_self() & 0xff) | (getpid() << 8);
+	i = ((uint64_t)pthread_self() & 0xff) | (getpid() << 8);
 	return i;
 }
 

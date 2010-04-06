@@ -31,7 +31,7 @@ log_priority(int priority, const char *fmt, va_list args)
 #endif
 
 	(void)snprintf(lbuff, sizeof(lbuff),
-		       "[tid: %d] %s", (int)pthread_self(), fmt);
+		       "[tid: %llu] %s", (uint64_t)pthread_self(), fmt);
 	vsyslog(priority, lbuff, args);
 
 #if 0
