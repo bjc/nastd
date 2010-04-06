@@ -61,7 +61,9 @@ clean:
 
 realclean:
 	rm -f common/*.o common/*.a client/*.o server/*.o
-	rm -f tests/*.o tests/getnast
+	rm -f libconfig/*.o libconfig/*.a client/*.a tests/*.o
+	rm -f server/nastd tests/getnast tests/killnast tests/mtstressnast
+	rm -f tests/randnast tests/statnast tests/stressnast tests/updnast
 	rm -f perl/Makefile perl/NASTD.c perl/NASTD.bs perl/*.o
 	rm -rf perl/blib
 
