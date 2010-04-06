@@ -1,6 +1,8 @@
 #ifndef STRING_H
 #	define STRING_H
 
+#undef __OBJC2__                        /* Turn off OBJC2 on Darwin. */
+
 #include <Object.h>
 
 @interface String: Object

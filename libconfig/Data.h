@@ -1,6 +1,8 @@
 #ifndef DATA_H
 #	define DATA_H
 
+#undef __OBJC2__                        /* Turn off OBJC2 on Darwin. */
+
 #include "String.h"
 
 #include <Object.h>

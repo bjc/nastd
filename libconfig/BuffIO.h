@@ -1,6 +1,8 @@
 #ifndef BUFFIO_H
 #	define BUFFIO_H
 
+#undef __OBJC2__                        /* Turn off OBJC2 on Darwin. */
+
 #include <Object.h>
 
 #include <sys/types.h>
