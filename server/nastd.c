@@ -37,7 +37,7 @@ make_u_csock()
 	}
 
 	memset(&sunix, 0, sizeof(sunix));
-	snprintf(sunix.sun_path, sizeof(sunix.sun_path), config.nast_sock);
+	strncpy(sunix.sun_path, config.nast_sock, sizeof(sunix.sun_path));
 	sunix.sun_family = AF_UNIX;
 	(void)unlink(sunix.sun_path);
 
