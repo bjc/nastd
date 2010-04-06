@@ -35,8 +35,10 @@ nast_string_new(int slen, const char *data)
 		return NULL;
 
 	tmp->strdata = malloc((slen+1) * sizeof(char *));
-	if (tmp == NULL)
+	if (tmp->strdata == NULL) {
+		free(tmp);
 		return NULL;
+        }
 	memcpy(tmp->strdata, data, slen);
 	tmp->strdata[slen] = '\0';
 	tmp->strlen = slen;
